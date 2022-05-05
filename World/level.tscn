@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4wbl5wfsr5w5"]
+
+[ext_resource type="PackedScene" uid="uid://bdwkbtxy6oog4" path="res://Player/player.tscn" id="1_xflen"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_nncsi"]
+
+[node name="Level" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.34202, 0.939693, 0, -0.939693, -0.34202, 0, 50, -15)
+light_color = Color(0.937255, 0.937255, 0.937255, 1)
+light_energy = 3.0
+light_indirect_energy = 2.0
+light_angular_distance = 1.0
+
+[node name="Player" parent="." instance=ExtResource( "1_xflen" )]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.75958, 0, 0)
+mesh = SubResource( "BoxMesh_nncsi" )
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.3007, 0, 0)
+mesh = SubResource( "BoxMesh_nncsi" )
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.424005, 0, 21.6623)
+mesh = SubResource( "BoxMesh_nncsi" )
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.852199, 0, -13.236)
+mesh = SubResource( "BoxMesh_nncsi" )

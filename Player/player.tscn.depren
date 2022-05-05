@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://Player/Player.gd" id="1_4lr5p"]
+[ext_resource type="PackedScene" uid="uid://dje6rkbkm4j5l" path="res://Player/StarSparrow.glb" id="2_un7s6"]
+
+[node name="Player" type="Node3D"]
+script = ExtResource( "1_4lr5p" )
+
+[node name="StarSparrow" parent="." instance=ExtResource( "2_un7s6" )]
